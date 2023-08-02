@@ -18,6 +18,7 @@
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --transition: all 0.5s ease-in-out;
+  --box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -65,21 +66,35 @@ section {
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: skyblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: navy;
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: red;
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: green;
+}
+
+.sec6 {
+  display: none;
+  transform: translateY(0) scale(1);
+  background-color: yellow;
+}
+
+.active {
+  display: block;
 }
 
 .controlls {
@@ -89,9 +104,16 @@ section {
   right: 3%;
   display: flex;
   flex-direction: column;
-  transform: translateY(-50%);
   align-items: center;
   justify-content: center;
+  transform: translateY(-50%);
+}
+.controlls .active-btn {
+  background-color: var(--color-secondary) !important;
+  transition: var(--transition);
+}
+.controlls .active-btn i {
+  color: var(--color-white) !important;
 }
 .controlls .control {
   padding: 1rem;
@@ -100,4 +122,15 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.6rem 0;
+  box-shadow: var(--box-shadow);
+}
+.controlls .control i {
+  font-size: 1.8rem;
+  pointer-events: none;
+  color: var(--color-grey-2);
 }/*# sourceMappingURL=styles.css.map */
