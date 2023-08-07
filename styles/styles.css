@@ -336,6 +336,12 @@ section {
   position: relative;
   border-radius: 15px;
 }
+.portfolio-container .portfolio-item .port-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
 .portfolio-container .portfolio-item img {
   width: 100%;
   height: 300px;

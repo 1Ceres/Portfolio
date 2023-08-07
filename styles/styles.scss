@@ -340,6 +340,12 @@ section{
         position: relative;
        // transition: var(--transition);
        border-radius: 15px;
+       .port-desc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+       }
         img{
             width: 100%;
             height: 300px;
