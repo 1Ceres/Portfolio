@@ -12,6 +12,7 @@ function active_one_sec(){
             this.className += ' active-btn'
         })
     }
+    
 
     allSections.addEventListener('click', (e) =>{
         const id = e.target.dataset.id;

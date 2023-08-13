@@ -81,7 +81,6 @@ section {
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: green;
 }
 
 .sec6 {
@@ -466,4 +465,95 @@ section {
 }
 .certificate-container .certificates .certificate-item .certificate-description h4:hover {
   color: var(--color-secondary);
+}
+
+.hobby-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.hobby-container .hobby-item {
+  position: relative;
+  border-radius: 15px;
+}
+.hobby-container .hobby-item .port-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.hobby-container .hobby-item img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.hobby-container .hobby-item .hover-item {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0);
+  transition: var(--transition);
+}
+.hobby-container .hobby-item .hover-item h3 {
+  font-size: 1.35rem;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+.hobby-container .hobby-item .hover-item .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hobby-container .hobby-item .hover-item .icons .icon {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.hobby-container .hobby-item .hover-item .icons .icon i {
+  font-size: 2.5rem;
+  color: var(--color-white);
+  margin: 0 1rem;
+}
+.hobby-container .hobby-item .hover-item .icons .icon:hover {
+  background-color: var(--color-white);
+}
+.hobby-container .hobby-item .hover-item .icons .icon:hover i {
+  color: var(--color-primary);
+}
+.hobby-container .hobby-item .hover-item .language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hobby-container .hobby-item .hover-item .language img {
+  width: 300px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  margin-top: 1.5rem;
+}
+
+.portfolio-item:hover .hover-item {
+  opacity: 1;
+  transform: scale(1);
 }/*# sourceMappingURL=styles.css.map */
